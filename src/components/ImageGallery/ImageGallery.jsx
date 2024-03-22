@@ -2,7 +2,6 @@ import ImageCard from "../ImageCard/ImageCard";
 import css from "./ImageGallery.module.css";
 
 function ImageGallery({ images, openModal }) {
-  console.log(images);
   return (
     <ul className={css.imageList}>
       {images.map(({ id, urls, description }) => (

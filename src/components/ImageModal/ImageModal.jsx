@@ -9,7 +9,7 @@ function ImageModal({ modalImg, isModalOpen, closeModal }) {
       overlayClassName={css.overlay}
       className={css.modalImg}
     >
-      <img src={modalImg} alt="modal image" />
+      <img src={modalImg} alt="modal image" className={css.image} />
     </ReactModal>
   );
 }

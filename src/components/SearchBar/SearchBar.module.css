@@ -29,9 +29,8 @@
 
 .searchFormBtn {
   position: absolute;
-  top: calc(50% - 24px); /* Adjust top position */
-  left: 5px; /* Adjust right position */
-  /* transform: translate(-50%, -50%); */
+  top: calc(50% - 24px);
+  left: 5px;
   display: inline-block;
   width: 48px;
   height: 48px;
