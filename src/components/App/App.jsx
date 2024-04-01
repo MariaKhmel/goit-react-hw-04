@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import fetchPicturesByQuery from "../fetchpictures-api";
-import { Toaster, toast } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 import Searchbar from "../SearchBar/SearchBar";
 import ImageGallery from "../ImageGallery/ImageGallery";
@@ -51,17 +51,9 @@ function App() {
     setModalOpen(false);
   };
 
-  const handleSearchBarSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const { value } = form.elements.input;
-    if (value.trim() === "") {
-      toast.error("Please enter text");
-      return;
-    }
+  const handleSearchBarSubmit = (value) => {
     setQuery(value);
     setPage(1);
-    form.reset();
   };
 
   const onLoadMore = () => {
